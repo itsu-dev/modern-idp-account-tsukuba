@@ -47,10 +47,8 @@ a {
   border: #dddddd solid 1px;
 
   padding: 2rem;
-}
 
-header > h2 {
-  display: none;
+  max-width: 70%;
 }
 
 header {
@@ -63,6 +61,13 @@ header {
 
   & > h2 {
     display: none;
+  }
+
+  /* 過去のリクエスト */
+  & > h3 {
+    margin-bottom: 1rem;
+    font-weight: normal;
+    color: #702A9B;
   }
 }
 

@@ -1,0 +1,158 @@
+/* Designing CSS */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg,rgba(112, 42, 155, 1) 0%, rgba(83, 237, 219, 1) 100%);
+}
+
+a {
+  color: #702A9B !important;
+  text-decoration: underline dashed !important;
+
+  &:hover {
+    color: #36b5a6 !important;
+  }
+
+  &:visited {
+    color: gray;
+  }
+}
+
+.wrapper {
+  /** reset */
+  background: transparent;
+
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  /** reset */
+  position: static;
+  left: unset;
+  width: auto;
+  margin-left: 0;
+
+  background-color: white;
+  box-shadow: 0 0 80px 0 #ffffff8a;
+  border-radius: 1rem;
+  border: #dddddd solid 1px;
+
+  padding: 2rem;
+}
+
+header > h2 {
+  display: none;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  padding: 0;
+
+  & > h2 {
+    display: none;
+  }
+}
+
+.content {
+  padding: 0;
+
+  .column {
+    float: unset;
+  }
+
+  .one, .two {
+    width: 100%;
+    margin: 0;
+  }
+
+  .one > * {
+    color: #702A9B;
+  }
+
+  .form-error {
+    color: white;
+    background-color: #b33b3b;
+    padding: 0.25rem 0.5rem 0.25rem 1.75rem;
+    border-radius: 0.25rem;
+    margin-bottom: 0.75rem;
+
+    position: relative;
+
+    .error-icon {
+      position: absolute;
+      width: 1.2rem;
+      height: 1.2rem;
+      top: 0.29rem;
+      left: 0.25rem;
+    }
+  }
+}
+
+form {
+  width: 100%;
+
+  legend {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  label {
+    font-weight: normal;
+    color: #333333;
+  }
+
+  input:focus {
+    outline: #702A9B solid 2px;
+    outline-offset: -2px;
+  }
+
+  .form-button {
+    box-sizing: border-box;
+    padding: 0.75rem;
+    background-color: #702A9B;
+    position: relative;
+
+    transition: all 0.2s;
+
+    .form-icon {
+      position: absolute;
+      width: 1.5rem;
+      height: 1.5rem;
+      top: 0.5rem;
+      right: 1rem;
+    }
+  }
+
+  .form-button:hover {
+    filter: brightness(1.2);
+    background-color: #702A9B;
+  }
+
+  label[for="donotcache"] {
+    display: block;
+    margin-bottom: 2rem;
+  }
+}
+
+.list-help {
+  margin-top: 1rem;
+  color: #999999;
+}
+
+footer {
+  display: none;
+}
